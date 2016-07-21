@@ -24955,9 +24955,9 @@
 
 	var React = __webpack_require__(1);
 
-	var WeatherMessage = function WeatherMessage(props) {
-		var temp = props.temp;
-		var location = props.location;
+	var WeatherMessage = function WeatherMessage(_ref) {
+		var temp = _ref.temp;
+		var location = _ref.location;
 
 
 		return React.createElement(
@@ -26369,11 +26369,20 @@
 	var React = __webpack_require__(1);
 
 	var Examples = function Examples(props) {
-			return React.createElement(
-					'h3',
-					null,
-					'Examples Component!'
-			);
+		return React.createElement(
+			'div',
+			null,
+			React.createElement(
+				'h3',
+				null,
+				'Examples Component!'
+			),
+			React.createElement(
+				'p',
+				null,
+				'Welcome to examples page'
+			)
+		);
 	};
 
 	module.exports = Examples;
